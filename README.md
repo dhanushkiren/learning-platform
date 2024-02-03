@@ -10,11 +10,11 @@ Before you begin, ensure you have Node.js installed on your machine. You can dow
 
 
 # Install Dependencies:
-npm install
+npm install \n
 This will install all the necessary dependencies for your project.
 
 # Run the Development Server:
-npm start
+npm start \n
 
 This command will start a development server and open your React application in your default web browser.
 
