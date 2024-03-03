@@ -1,0 +1,82 @@
+/* OTPPage.css */
+
+body {
+  margin: 0;
+  background: url('assets/fgp.jpeg') no-repeat;
+  background-size: cover;
+}
+
+.otp-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-container {
+  background-color: lightblue; 
+  margin-top: 20%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: #333; /* Adjust paragraph text color as needed */
+}
+
+.resend-button,
+.verify-button {
+  border-radius: 10%;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.resend-button:hover,
+.verify-button:hover {
+  background-color: #B6CCD8;
+}
+
+.verify-button:disabled {
+  background-color:grey; /* Disabled color */
+  cursor: not-allowed;
+}
+
+/* OTPPage.css */
+
+.otp-input-container {
+  display: flex;
+  justify-content: space-between; /* Add space between input boxes */
+  margin: 0 -3px; /* Decrease margin for spacing between input boxes */
+}
+
+.otp-input-container input {
+  width: 2em; 
+  height: 2em; /* Set height for each input box */
+  margin: 0 3px; /* Add margin for spacing between input boxes */
+  text-align: center;
+  font-size: 1.5em; /* Adjust font size */
+  border: 1px solid #00668C; /* Add border for better visibility */
+}
+
+/* Adjust button styles */
+.resend-button,
+.verify-button {
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+}
+
+.resend-button:hover,
+.verify-button:hover {
+  background-color: #B6CCD8;
+}
