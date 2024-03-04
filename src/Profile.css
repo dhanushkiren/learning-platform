@@ -1,87 +1,87 @@
 /* Profile.css */
 
 .admin-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15rem auto;
-    padding: 1rem;
-    border: 1px solid #100f0f;
-    border-radius: 20px;
-    width: 500px; /* Adjust width as needed */
-    background-color: #fff;
-  }
-  
-  .profile-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .profile-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .edit-button {
-    padding: 0.5rem 1rem; /* Keep the padding for text */
-    width: 100px; /* Set the width of the button */
-    height: 35px; /* Set the height of the button */
-    border: none;
-    border-radius: 20px;
-    background-color: #00668c;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .profile-info {
-    padding: 1rem;
-  }
-  
-  .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .info-label {
-    width: 150px; /* Adjust the width of the label as needed */
-    text-align: right; /* Align the label text to the right */
-    margin-right: 1rem;
-    color: #000 !important; /* Set the color of the label text to black */
-  }
-  
-  .info-value {
-    flex: 1; /* Allow the input field to grow to fill available space */
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 1rem; /* Add margin to separate input fields */
-    color: black !; /* Set the color of the value text to black */
-  }
-  
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Center the content horizontally */
-  }
-  
-  .edit-button-container {
-    margin-top: 20px; /* Add margin to separate the profile box and the button */
-    text-align: center; /* Center the button horizontally */
-  }
-  
-  .profile-icon {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .user-icon {
-    font-size: 48px; /* Adjust the size as needed */
-    color: #3498db; /* Change the color to your preference */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem auto;
+  padding: 1rem;
+  border: 1px solid #100f0f;
+  border-radius: 20px;
+  width: 500px; /* Adjust width as needed */
+  background-color: #fff;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.edit-button {
+  padding: 0.5rem 1rem; /* Keep the padding for text */
+  width: 100px; /* Set the width of the button */
+  height: 35px; /* Set the height of the button */
+  border: none;
+  border-radius: 20px;
+  background-color: #00668c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.profile-info {
+  padding: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.info-label {
+  width: 150px; /* Adjust the width of the label as needed */
+  text-align: right; /* Align the label text to the right */
+  margin-right: 1rem;
+  color: #000 !important; /* Set the color of the label text to black */
+}
+
+.info-value {
+  flex: 1; /* Allow the input field to grow to fill available space */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem; /* Add margin to separate input fields */
+  color: black !; /* Set the color of the value text to black */
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center the content horizontally */
+}
+
+.edit-button-container {
+  margin: 20px; /* Add margin to separate the profile box and the button */
+  text-align: center; /* Center the button horizontally */
+}
+
+.profile-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-icon {
+  font-size: 48px; /* Adjust the size as needed */
+  color: #3498db; /* Change the color to your preference */
+}
