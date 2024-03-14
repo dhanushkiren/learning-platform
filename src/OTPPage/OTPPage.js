@@ -1,3 +1,4 @@
+// OTPPage.js
 import React, { useState, useEffect, useRef } from 'react';
 import './OTPPage.css'; // Import or create a CSS file for styling
 

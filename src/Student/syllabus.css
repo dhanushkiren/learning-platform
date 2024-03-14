@@ -1,0 +1,111 @@
+/* Syllabus.css */
+
+/* App container */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    margin-top: 100px;
+}
+
+select {
+    width: 700px; 
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    max-width: 800px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Dropdown option style */
+select option {
+    padding: 18px;
+}
+
+/* Syllabus container */
+.syllabus-container {
+    width: 300%;
+    max-width: 1000px; 
+    border: 1px solid white;
+    border-radius: 10px; 
+    padding: 40px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 0 10px rgba(168, 157, 157, 0.1);
+}
+
+/* Cards container */
+.cards-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+}
+
+/* Card styles */
+.card {
+    width: 200px; 
+    height: 200px; 
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #d4eaf7;
+    box-shadow: 0 0 5px rgba(90, 88, 88, 0.1);
+    transition: box-shadow 0.3s ease; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+/* Card title */
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black; 
+}
+
+/* Card description */
+.card p {
+    font-size: 16px;
+    color: black; 
+}
+
+/* Apply hover effect */
+.card:hover {
+    box-shadow: 0 0 40px rgba(115, 112, 112, 0.3); 
+}
+
+/* Rectangular card container */
+.rectangular-card-container {
+    width: 70%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Rectangular card */
+.rectangular-card {
+    background-color: #00668c;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(138, 133, 133, 0.1);
+}
+
+/* Subject name */
+.rectangular-card h2 {
+    color: white; 
+    margin-bottom: 10px; 
+}
+
+/* Faculty name and subject code */
+.rectangular-card p {
+    color: white; 
+    margin: 5px 0; 
+}

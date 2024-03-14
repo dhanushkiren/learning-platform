@@ -1,0 +1,15 @@
+/*videos.css*/
+
+.video-card {
+    margin-bottom: 20px;
+    height: 400px;
+  }
+  
+  .video-card video {
+    width: 100%;
+  }
+  
+  .video-card .card-title {
+    text-align: center;
+  }
+  

@@ -1,0 +1,222 @@
+/* Profile Dropdown Styles */
+.profile-dropdown {
+  position: absolute;
+  top: 70px; /* Adjust the distance from the top as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 180px; /* Adjust the width as needed */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.profile-option {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-option:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.profile-option > svg {
+  margin-right: 10px;
+}
+
+.profile-box {
+  position: absolute;
+  top: 70px; /* Adjust position as needed */
+  right: 20px; /* Adjust position as needed */
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 160px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-item span {
+  margin-left: 10px;
+}
+
+.profile-line {
+  width: 100%; /* Adjust the width as needed */
+  margin: 10px auto; /* Center the line horizontally with some margin */
+  border: none;
+  border-top: 1px solid black; /* Add top border to create the line */
+}
+.profile-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+  
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-icon img {
+  border-radius: 50%; 
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover;
+}
+
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.info-value {
+  margin-left: 10px;
+  position: relative; 
+  width:150px
+}
+
+.edit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.student-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #100f0f;
+  border-radius: 20px;
+  width: 500px; 
+  background-color: #fff;
+  margin-top: 150px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.edit-button {
+  padding: 0.5rem 1rem; 
+  width: 100px; 
+  height: 35px; 
+  border: none;
+  border-radius: 20px;
+  background-color: #00668c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.profile-info {
+  padding: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.info-label {
+  width: 130px; 
+  text-align: right; 
+  margin-right: 1rem;
+  color: #000 !important; /* Set the color of the label text to black */
+}
+
+.info-value {
+  width: 130px; 
+  flex: 1; /* Allow the input field to grow to fill available space */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem; /* Add margin to separate input fields */
+  color: black !; /* Set the color of the value text to black */
+  position: relative; /* Position relative for the eye icon */
+}
+
+
+
+.eye-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  color: #00668c;
+  height: 130px;
+  width: 130px;
+  margin-top: -100px;
+  background-color: white;
+}
+
+
+.reset-button {
+  margin-left: 100px;
+  padding: 0.5rem 1rem; /* Keep the padding for text */
+  width: 100px; /* Set the width of the button */
+  height: 35px; /* Set the height of the button */
+  border: none;
+  border-radius: 20px;
+  background-color: #00668c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+.save-button{
+  padding: 0.5rem 1rem; /* Keep the padding for text */
+  width: 100px; /* Set the width of the button */
+  height: 35px; /* Set the height of the button */
+  border: none;
+  border-radius: 20px;
+  background-color: #00668c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
