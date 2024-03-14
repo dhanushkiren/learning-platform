@@ -1,0 +1,56 @@
+/* Assessment.css */
+
+.assessment-title {
+    text-align: center;
+  }
+  
+  .assessment-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .assessment-col {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width for three cards in a row */
+    margin-bottom: 20px;
+    margin-right: 10px; /* Space between cards */
+    margin-left: 10px; /* Space between cards */
+  }
+  
+  .assessment-card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .assessment-card-body {
+    padding: 20px;
+  }
+  
+  .assessment-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .assessment-card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .assessment-btn {
+    background-color:#00668c;
+    border-color: #00668c;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .assessment-btn:hover {
+    background-color: #b6ccd8;
+    border-color: #b6ccd8;
+  }
+  

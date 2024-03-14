@@ -1,0 +1,100 @@
+/* Adjust sidebar height */
+.sidebar1 {
+  position: fixed;
+  top: 60px; /* Height of the header */
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #fff;
+  border-right: 1px solid black;
+  margin-left: 71px;
+  border-top: 1px solid black;
+  transition: width 0.3s ease; /* Add transition for width */
+  z-index: 10; /* Add z-index */
+}
+
+/* Adjust sidebar width when open */
+.sidebar1.open {
+  width: 250px; /* Adjust width as needed */
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.timetable-label {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid black;
+}
+
+.day-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.day-label {
+  font-weight: bold;
+}
+
+.dropdown-icon {
+  font-size: 20px;
+}
+
+.day-options {
+  padding: 20px;
+}
+
+.day-option {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  .sidebar1 {
+    width: 100%; /* Full width on smaller screens */
+    position: relative;
+    top: 0;
+    height: auto;
+    border-right: none;
+  }
+}
+
+/* Add this CSS to your existing styles */
+
+.timetable-container {
+  border: 4px solid black; /* Thick black border */
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 100px; /* Adjust position as needed */
+  left: 350px; /* Adjust position as needed */
+}
+
+.calendar-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.timetable-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  gap: 10px;
+}
+
+.timetable-box {
+  border: 1px solid black;
+  padding: 10px;
+}

@@ -1,0 +1,18 @@
+
+
+#left{
+    float:left;
+    width: 100%;
+}
+#right{
+    float:left;
+    width: 80%;
+}
+#bottom{
+    border: 1px solid black;
+    clear: both;
+}
+
+.container {
+    border: 1px solid black;    
+}
