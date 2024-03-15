@@ -51,5 +51,4 @@ console.log("carddata",carddata)
     </Stack>
   );
 }
-
 export default Chart;
