@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../profile'
+import Chart from '../Chart';
 import { Button } from '@mui/material';
 
 function FacultyDashboard({setFacultyOpen,fromAdmin}) {
@@ -87,7 +87,7 @@ function FacultyDashboard({setFacultyOpen,fromAdmin}) {
       {fromAdmin&&<Button  style={{display:'flex',position:'relative',left:'90%', top:'650px', backgroundColor:'#D4EAF7'}} onClick={()=>setFacultyOpen(false)}>
         Back 
       </Button>}
-        <Profile one={one} state={state} statetwo={statetwo} carddata={carddata}/>
+        <Chart one={one} state={state} statetwo={statetwo} carddata={carddata}/>
     </div>
   )
 }

@@ -2,27 +2,29 @@
 .body{
   overflow: hidden;
 }
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    background-color: #d4eaf7;
-    padding: 0 20px;
-    border-bottom: 1px solid black;
-    z-index: 1000; 
-  }
 
-.header-item {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #d4eaf7;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+  z-index: 1000; 
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-/* Search box styles */
 .search-container {
   position: relative;
 }
@@ -30,17 +32,18 @@
 .search-box {
   padding: 8px 30px;
   border: none;
-  width: 300px; /* Adjust the width as needed */
+  width: 300px; 
+  
 }
 
 .search-icon-container {
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: -41px;
   transform: translateY(-50%);
   background-color: #00668c;
   width: 40px;
-  height: 100%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,17 +53,15 @@ input:focus {
   outline: none;
 }
 
-/* Content styles */
+
+
+
 .content {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.centered-content p {
-  margin: 0; /* Remove margin for the paragraph */
-  margin-top: -90px;
-  font-style: italic;
+  height: calc(100vh - 400px); 
 }
 
 .centered-content {
@@ -68,119 +69,96 @@ input:focus {
 }
 
 .centered-content img {
-  max-width: 39%;
+  
+  max-width: 100%;
+  max-height: 400px; 
   height: auto;
+  width:1000px;
+ margin-left: 100px;
+ margin-top: 100px;
 }
-
-/* App.css */
 
 .sidebar {
-  width: 70px; /* Set initial width for closed sidebar */
+  width: 70px; 
   overflow: hidden;
-  transition: width 0.3s ease; /* Add transition for width */
-  border-right: 1px solid black; /* Add border to the right side */
-  border-top: 1px solid black; /* Add border to the right side */
+  transition: width 0.3s ease; 
+  border-right: 1px solid black; 
+  border-top: 1px solid black; 
   position: fixed;
-  top: 60px; /* Height of the header */
+  top: 60px; 
   bottom: 0;
   left: 0;
-  background-color: #fff; /* Add background color */
+  background-color: #fff; 
 }
 
-/* Sidebar items styles */
+
 .sidebar-item {
-  display: flex; /* Change to flex to align items horizontally */
-  align-items: center; /* Align items vertically */
+  display: flex; 
+  align-items: center; 
   padding: 20px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-/* Additional styling for sidebar icons */
+
 .sidebar-item svg {
-  margin-right: 7px; /* Add some spacing between icon and text */
+  margin-right: 7px; 
 }
 
-/* Ensure sidebar items align properly when open */
 .sidebar.open {
-  width: 170px; /* Expanded width */
+  width: 170px; 
 }
 
 .sidebar .sidebar-item-name {
-  display: none; /* Hide text when sidebar is closed */
+  display: none; 
+  color: black;
+  
 }
 
-/* Show text when sidebar is open */
+
 .sidebar.open .sidebar-item-name {
-  display: inline; /* Show text when sidebar is open */
+  display: inline; 
 }
 
-/* Change background color on hover */
+
 .sidebar-item:hover {
-  background-color: #d4eaf7; /* Change to desired background color */
+  background-color: #d4eaf7; 
 }
 
-
-/* Profile Dropdown Styles */
-.profile-dropdown {
-  position: absolute;
-  top: 70px; /* Adjust the distance from the top as needed */
-  right: 20px; /* Adjust the distance from the right as needed */
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 180px; /* Adjust the width as needed */
-  padding: 20px; /* Adjust the padding as needed */
-}
-
-
-.profile-option {
-  padding: 10px 20px;
+.rounded-images-container {
   display: flex;
-  align-items: center;
-  cursor: pointer;
+  justify-content: space-around;
+  margin-top: 700px; 
+  margin-left: 200px;
 }
 
-.profile-option:hover {
-  background-color: #f0f0f0; /* Change background color on hover */
+.rounded-image {
+  text-align: center;
 }
 
-.profile-option > svg {
-  margin-right: 10px;
+.rounded-image img {
+  border-radius: 50%;
+  width: 130px; 
+  height: 130px;
+  object-fit: cover;
+  margin-bottom: 5px; 
+  margin-left: -1000px;
 }
 
-.profile-box {
-  position: absolute;
-  top: 70px; /* Adjust position as needed */
-  right: 20px; /* Adjust position as needed */
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid black;
-  padding: 20px;
-  width: 160px; /* Adjust the width as needed */
-  height: 70px; /* Adjust the height as needed */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.rounded-image p {
+  margin-left: -1000px;
+  font-size: 16px; 
+  font-weight: bold;
+  color: #333; 
+  margin-top: -10px;
+}
+
+/* Reduce the margin between rounded images */
+.rounded-images-container .rounded-image + .rounded-image {
+  margin-left: -400px; 
 }
 
 
-.profile-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.profile-item span {
-  margin-left: 10px;
-}
-
-.profile-line {
-  width: 100%; /* Adjust the width as needed */
-  margin: 10px auto; /* Center the line horizontally with some margin */
-  border: none;
-  border-top: 1px solid black; /* Add top border to create the line */
-}
 .paddingall{
   padding: 5px 5px 15px 30px !important;
 font-weight: 600;
@@ -200,19 +178,9 @@ align-items: center;
   display: block;
 
 }
-/*.columnside{
-  padding:70px 150px;
-  flex-direction: row;
-  display:flex;
-}
-*/
-  
 
 .circle{
-  /* padding:50px 0px 0px 0px ;
-display: inline-block;
- position: relative;
-left:35%; */
+
  width: 100%;
  height: 100%;
 }
