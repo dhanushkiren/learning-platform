@@ -1,0 +1,205 @@
+/* App1.css */
+.body{
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #d4eaf7;
+  padding: 0 20px;
+  border-bottom: 1px solid black;
+  z-index: 1000; 
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-box {
+  padding: 8px 30px;
+  border: none;
+  width: 300px; 
+  
+}
+
+.search-icon-container {
+  position: absolute;
+  top: 35%;
+  right: -41px;
+  transform: translateY(-50%);
+  background-color: #00668c;
+  width: 40px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+
+
+.content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 400px); 
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.centered-content img {
+  
+  max-width: 100%;
+  max-height: 400px; 
+  height: auto;
+ margin-left: 100px;
+ margin-top: 100px;
+}
+
+.sidebar {
+  width: 70px; 
+  overflow: hidden;
+  transition: width 0.3s ease; 
+  border-right: 1px solid black; 
+  border-top: 1px solid black; 
+  position: fixed;
+  top: 60px; 
+  bottom: 0;
+  left: 0;
+  background-color: #fff; 
+}
+
+
+.sidebar-item {
+  display: flex; 
+  align-items: center; 
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.sidebar-item svg {
+  margin-right: 7px; 
+}
+
+.sidebar.open {
+  width: 170px; 
+}
+
+.sidebar .sidebar-item-name {
+  display: none; 
+  color: black;
+  
+}
+
+
+.sidebar.open .sidebar-item-name {
+  display: inline; 
+}
+
+
+.sidebar-item:hover {
+  background-color: #d4eaf7; 
+}
+
+.rounded-images-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 700px; 
+  margin-left: 200px;
+}
+
+.rounded-image {
+  text-align: center;
+}
+
+.rounded-image img {
+  border-radius: 50%;
+  width: 130px; 
+  height: 130px;
+  object-fit: cover;
+  margin-bottom: 5px; 
+  margin-left: -1000px;
+}
+
+.rounded-image p {
+  margin-left: -1000px;
+  font-size: 16px; 
+  font-weight: bold;
+  color: #333; 
+  margin-top: -10px;
+}
+
+/* Reduce the margin between rounded images */
+.rounded-images-container .rounded-image + .rounded-image {
+  margin-left: -400px; 
+}
+
+
+.paddingall{
+  padding: 5px 5px 15px 30px !important;
+font-weight: 600;
+align-items: center;
+}
+.pricesubTitle{
+  padding: 10px 10px 15px 30px !important;
+  font-size: 25px;
+}
+.iconName{
+  font-size: 3rem;
+}
+
+.drop{
+  padding: 60px 250px 120px ;
+  position: relative;
+  display: block;
+
+}
+
+.circle{
+
+ width: 100%;
+ height: 100%;
+}
+.fullcircle{
+  height:70px;
+  width: 70px;
+  border: 10px solid #00668C;
+  border-radius: 1000px;
+  padding: 10px;
+  background-color: #d4eaf7;
+
+}
+
+.halfcircle{
+  height:70px;
+  width: 70px;
+  border: 10px solid #00668C;
+  border-radius: 1000px;
+  position: relative;
+  top: 20px;
+  background-color: #d4eaf7;
+  padding: 10px;
+}
