@@ -1,4 +1,4 @@
-/* App.css */
+/* App1.css */
 .body{
   overflow: hidden;
 }
@@ -73,7 +73,6 @@ input:focus {
   max-width: 100%;
   max-height: 400px; 
   height: auto;
-  width:1000px;
  margin-left: 100px;
  margin-top: 100px;
 }

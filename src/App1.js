@@ -1,7 +1,7 @@
 // App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import './App1.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import CenteredImage from './CenteredImage'; 
@@ -21,7 +21,7 @@ function Home() {
   );
 }
 
-function App() {
+function App1() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -46,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default App1;
