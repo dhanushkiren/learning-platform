@@ -1,0 +1,114 @@
+/* SecondPage.css */
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.left-section {
+  background-color:  #D4EAF7;
+  color:  #00668C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.left-section-image {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain the aspect ratio */
+  max-height: 100%; /* Prevent the image from exceeding the container */
+  margin-bottom: 10px;
+}
+
+.right-section {
+  background-color:#00668C;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.login-container {
+  text-align: center;
+}
+
+.inner-container {
+  width: 300px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the inner container horizontally */
+}
+
+.section-title {
+  margin-top: 200px;
+  font-size: 24px;
+}
+
+.section-subtitle {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.inner-container {
+  background-color:#8cc3d9;
+  width: 100%;
+  max-width: 400px; 
+  margin: 0 auto; /* Center the inner-container horizontally */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  margin-top: 100px;
+}
+
+.login-form {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.login-input {
+  width: 350px; /* Adjust the width as needed */
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.login-form input[type="password"] {
+  width: 350px; /* Adjust the width for the password input */
+  margin-bottom: 15px;
+}
+
+.login-button {
+  width: 100px;
+  height: 40px; /* Adjust the height of the button */
+  background-color: #00668C;
+  border-radius: 5px; 
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.login-button:hover {
+  background-color: #B6CCD8;
+}
+
+
+.forgot-password {
+  margin-top: 10px;
+}

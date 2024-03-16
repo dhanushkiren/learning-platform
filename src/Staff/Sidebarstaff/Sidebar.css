@@ -1,0 +1,47 @@
+
+.sidebar {
+    width: 70px; /* Set initial width for closed sidebar */
+    overflow: hidden;
+    transition: width 0.3s ease; /* Add transition for width */
+    border-right: 1px solid black; /* Add border to the right side */
+    border-top: 1px solid black; /* Add border to the right side */
+    position: fixed;
+    top: 60px; /* Height of the header */
+    bottom: 0;
+    left: 0;
+    background-color: #fff; /* Add background color */
+  }
+  
+  /* Sidebar items styles */
+  .sidebar-item {
+    display: flex; /* Change to flex to align items horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  /* Additional styling for sidebar icons */
+  .sidebar-item svg {
+    margin-right: 7px; /* Add some spacing between icon and text */
+  }
+  
+  /* Ensure sidebar items align properly when open */
+  .sidebar.open {
+    width: 170px; /* Expanded width */
+  }
+  
+  .sidebar .sidebar-item-name {
+    display: none; /* Hide text when sidebar is closed */
+  }
+  
+  /* Show text when sidebar is open */
+  .sidebar.open .sidebar-item-name {
+    display: inline; /* Show text when sidebar is open */
+  }
+  
+  /* Change background color on hover */
+  .sidebar-item:hover {
+    background-color: #d4eaf7; /* Change to desired background color */
+  }
+  
+  

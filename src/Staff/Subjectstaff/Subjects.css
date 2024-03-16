@@ -1,0 +1,139 @@
+/* Subjects.css */
+
+.subjects-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: #00668c;
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+  width: 500px; /* Adjust width as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Adjust the width as needed */
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-button {
+  cursor: pointer;
+  color: #00668c;
+}
+
+.create-subject-button-container {
+  margin-left: auto; /* Move to the right */
+  margin-right: 10px; /* Optional margin for spacing */
+}
+
+.add-subject-button {
+  background-color: #00668c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.create-subject-form {
+  margin-top: -540px;
+  margin-left: 900px;
+}
+
+.create-subject-form input {
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.options-box {
+  position: fixed;
+  margin-top: 270px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  background-color: white;
+}
+
+.options-box h3 {
+  margin-bottom: 10px;
+}
+
+.options-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.options-box li {
+  margin-bottom: 5px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Center text vertically */
+  margin-top: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 120px; /* Adjust the height as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-container {
+  margin-top: 100px; /* Adjust margin as needed */
+}
+
+.image-container img {
+  max-width: 700px; /* Adjust max-width as needed */
+  height: 400px;
+}

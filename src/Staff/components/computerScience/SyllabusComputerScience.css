@@ -1,0 +1,74 @@
+/* SyllabusComputerScience.css */
+
+.syllabus-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+  
+  .syllabus-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .file-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-name-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+  
+  .custom-file-upload-syllabus:hover {
+    background-color: #0056b3;
+  }
+  
+  .syllabus-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00668c;
+    border: 1px solid #00668c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .syllabus-button:hover {
+    background-color: #2f7d99;
+  }
+  
+  .file-preview {
+    margin-top: 20px;
+  }
+  
+  /* ... (existing styles) */
+  
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  embed {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
