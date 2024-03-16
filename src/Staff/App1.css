@@ -1,2 +1,153 @@
+/* App.css */
+
+/* Header styles */
+.body{
+    overflow: hidden;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #d4eaf7;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+    z-index: 1000; 
+  }
+  
+  .header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.logo {
+    width: 50px;
+    height: auto;
+}
 
 
+input:focus {
+    outline: none;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* Adjust spacing for the header */
+}
+
+.centered-content p {
+    margin: 0;
+    margin-top: -90px; /* Adjust as needed */
+    font-style: italic;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.centered-content img {
+    max-width: 100%; /* Adjust image size to fit container */
+    height: auto;
+    margin-top: 100px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: none; /* Hide sidebar by default */
+}
+
+/* Sidebar toggle styles */
+.sidebar-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px;
+    background-color: #00668c;
+    color: #fff;
+    height: 100%; /* Ensure the toggle takes the full height of the header */
+}
+
+.sidebar-toggle-icon {
+    font-size: 1.5rem;
+}
+
+/* Profile dropdown styles */
+.profile-dropdown {
+    display: none; /* Hide profile dropdown by default */
+}
+
+/* Profile box styles */
+.profile-box {
+    display: none; /* Hide profile box by default */
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+    
+    .content {
+        padding-top: 100px; /* Increase padding for larger screens */
+    }
+
+    
+
+    .centered-content img {
+        max-width: 80%; /* Adjust image size for larger screens */
+    }
+
+    .sidebar {
+        display: block; /* Show sidebar on desktop */
+    }
+
+    .profile-dropdown {
+        display: block; /* Show profile dropdown on desktop */
+    }
+
+    .profile-box {
+        display: block; /* Show profile box on desktop */
+    }
+}
+
+/* Media Query for Tablet */
+@media (max-width: 1024px) {
+    
+
+    .centered-content img {
+        max-width: 70%; /* Adjust image size for tablet screens */
+    }
+
+    .sidebar {
+        display: block; /* Show sidebar on desktop */
+    }
+
+    .profile-dropdown {
+        display: none; /* Hide profile dropdown on tablet screens */
+    }
+
+    .profile-box {
+        display: none; /* Hide profile box on tablet screens */
+    }
+
+    .sidebar-toggle {
+        display: flex; /* Show sidebar toggle on tablet screens */
+    }
+}
+
+
+   /* Media Query for Mobile */
+@media (max-width: 767px) {
+
+    .centered-content img {
+        max-width: 90%; /* Adjust image size for mobile screens */
+    }
+}

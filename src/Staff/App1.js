@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App1.css';
-import './Headerstaff/Header.css';
-import './Sidebarstaff/Sidebar.css';
-import './Homestaff/CenteredImage.css';
 import Header from './Headerstaff/Header';
 import Sidebar from './Sidebarstaff/Sidebar';
 import CenteredImage from './Homestaff/CenteredImage';
@@ -35,6 +32,12 @@ function App1() {
     <div className="App">
       <Header toggleSidebar={toggleSidebar} />
       <Sidebar isSidebarOpen={isSidebarOpen} />
+      <button
+        className={`sidebar-toggle ${isSidebarOpen ? 'open' : 'close'}`}
+        onClick={toggleSidebar}
+      >
+        
+      </button>
       <Routes>
         <Route path="/" element={<Home1 />} />
         <Route path="/profile" element={<Profile />} />

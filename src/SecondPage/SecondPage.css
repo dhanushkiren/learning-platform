@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+.error-message {
+  color: red;
+}
+
 .left-section,
 .right-section {
   flex: 1;

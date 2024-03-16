@@ -4,13 +4,12 @@
   top: 60px; /* Height of the header */
   left: 0;
   bottom: 0;
-  width: 200px;
+  width: 250px;
   background-color: #fff;
   border-right: 1px solid black;
   margin-left: 71px;
   border-top: 1px solid black;
   transition: width 0.3s ease; /* Add transition for width */
-  z-index: 10; /* Add z-index */
 }
 
 /* Adjust sidebar width when open */
@@ -43,10 +42,17 @@
 
 .day-label {
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .dropdown-icon {
-  font-size: 20px;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Open Dropdown Icon */
+.dropdown-icon.open {
+  transform: rotate(180deg);
 }
 
 .day-options {
@@ -72,19 +78,24 @@
 /* Add this CSS to your existing styles */
 
 .timetable-container {
-  border: 4px solid black; /* Thick black border */
+  position: relative; /* Set position to relative */
+  border: 2px solid black; /* Thick black border */
   padding: 20px;
   text-align: center;
-  position: absolute;
-  top: 100px; /* Adjust position as needed */
-  left: 350px; /* Adjust position as needed */
+  width: 960px; /* Fixed width */
+  height: 430px; /* Fixed height */
+  margin-top: 150px;
+  margin-left: 350px;
+  border-radius: 10px;
 }
 
 .calendar-icon {
+  position: absolute; /* Set position to absolute */
   font-size: 36px;
-  margin-bottom: 20px;
-  height: 50px;
-  width: 50px;
+  margin-top: -50px;
+  margin-left: 450px;
+  color: #00668c;
+  background-color: white;
 }
 
 .timetable-boxes {
@@ -96,5 +107,21 @@
 
 .timetable-box {
   border: 1px solid black;
-  padding: 10px;
+  width: 310px;
+  height: 137px;
+  background-color: #d4eaf7;
+  border-radius: 5px;
+  position: relative;
+}
+
+.timetable-box input {
+  margin-bottom: 10px;
+}
+
+.add-icon,
+.edit-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 }
