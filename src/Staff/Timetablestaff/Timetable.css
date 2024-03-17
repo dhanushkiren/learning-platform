@@ -5,6 +5,7 @@
   left: 0;
   bottom: 0;
   width: 100px;
+
   background-color: #fff;
   border-right: 1px solid black;
   margin-left: 71px;
@@ -86,6 +87,8 @@
   height: 430px; /* Fixed height */
   margin-top: 100px;
   margin-left: -50px;
+
+ 
   border-radius: 10px;
 }
 

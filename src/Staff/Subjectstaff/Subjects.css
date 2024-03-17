@@ -12,6 +12,7 @@
 }
 
 /* Media Query for Tablet */
+
 @media (max-width: 1000px) {
   .dropdown-toggle,
   .dropdown-menu,
@@ -59,11 +60,15 @@
     margin-right: 10px; /* Optional margin for spacing */
   }
 }
+
+
+
 /* Media Query for Mobile */
 @media (max-width: 767px) {
   .dropdown-toggle,
   .dropdown-menu,
   .options-box {
+
     width: 60%; /* Adjust width for mobile screens */
   }
   .create-subject-form {
@@ -73,6 +78,7 @@
   .create-subject-button-container {
     margin-left: 50px; /* Move to the right */
     margin-right: 10px; /* Optional margin for spacing */
+
   }
 }
 

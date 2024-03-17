@@ -152,6 +152,7 @@ input:focus {
     }
 }
 
+
 .company-logo {
     width: 40px; /* Adjust the width of the logo */
     height: auto;
@@ -162,4 +163,4 @@ input:focus {
     font-size: 20px; /* Adjust font size as needed */
     font-weight: bold;
     color: #00668c; /* Adjust color as needed */
-  }
+}

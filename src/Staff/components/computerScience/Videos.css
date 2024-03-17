@@ -67,11 +67,14 @@ button:hover {
   gap: 20px;
   justify-content: space-between;
   margin-top: 20px;
+
   height: 150px;
+
 }
 
 /* Video Card */
 .video-card {
+
   margin-left: 100px;
   text-align: center;
   height: 150px; /* Adjusted to allow dynamic height */
@@ -79,6 +82,7 @@ button:hover {
   border-radius: 4px;
   padding: 10px;
   width: calc(25% - 20px); /* 2 cards in a row with gap of 20px */
+
   box-sizing: border-box; /* Include padding in the width */
 }
 
@@ -104,6 +108,8 @@ button:hover {
 
   /* Adjust the width of video cards for smaller screens */
   .video-card {
+
     width: 70%; /* Display one card per row on smaller screens */
+
   }
 }
