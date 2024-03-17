@@ -3,6 +3,7 @@
 .video-card {
     margin-bottom: 20px;
     height: 400px;
+    width: 50%;
   }
   
   .video-card video {

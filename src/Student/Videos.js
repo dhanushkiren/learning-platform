@@ -7,10 +7,11 @@ import vid from "./assests/video.mp4";
 
 const Videos = () => {
   return (
-    <div>
+    <div className="col-10">
       <h2>Videos Page</h2>
+      <div className="container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-12">
           <Card className="video-card">
             <Card.Body>
               <Card.Title>Video 1</Card.Title>
@@ -24,6 +25,7 @@ const Videos = () => {
             </Card.Body>
           </Card>
         </div>
+      </div>
       </div>
       {/* Add more card elements for additional videos */}
     </div>
