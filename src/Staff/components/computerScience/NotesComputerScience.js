@@ -1,5 +1,3 @@
-// NotesComputerScience.js
-
 import React, { useState, useEffect } from 'react';
 import './NotesComputerScience.css';
 
@@ -40,15 +38,19 @@ const NotesComputerScience = () => {
 
   return (
     <div className="notes-wrapper">
-      <h2 className="notes-title">Upload Notes</h2>
+      <h2 className="notes-title">UPLOAD NOTES</h2>
 
       <input
         type="file"
         accept=".doc, .docx, .pdf"
         onChange={handleFileChange}
+        className="notes-input-file" // Updated class name
       />
 
-      <button onClick={handleNoteUpload}>Upload Note</button>
+
+<button className="upload-button" onClick={handleNoteUpload}>
+        UPLOAD
+      </button>
 
       <div className="notes-cards-container">
         {notes.map((note, index) => (
@@ -58,12 +60,13 @@ const NotesComputerScience = () => {
               title={`note-${index}`}
               src={note.content}
               width="100%"
-              height="600px"
+              height="250px"
             />
           </div>
         ))}
       </div>
-    </div>
+      </div>
+    
   );
 };
 

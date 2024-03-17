@@ -1,89 +1,133 @@
 /* AssessmentsComputerScience.css */
 
+/* Wrapper */
 .assessments-wrapper {
-    max-width: 800px;
-    margin: 70px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .assessments-title {
-    color: #00668c;
-    margin-bottom: 20px;
-  }
-  
-  .assessments-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .assessments-label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #00668c;
-  }
-  
-  .assessments-input {
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-  }
-  
-  .assessments-button {
-    background-color: #00668c;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .assessments-button:hover {
-    background-color: #00668c;
-  }
-  
-  .assessments-card {
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .assessments-card-title {
-    margin-bottom: 10px;
-    color: #00668c;
-  }
-  
-  .assessments-card-currentdate {
-   
-    color:#00668c;
-    font-weight: bold;
-  }
-  
-  .assessments-card-link {
-    color: #00668c;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .assessments-card-link:hover {
-    text-decoration: underline;
+  max-width: 800px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.assessments-title {
+  color: #00668c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form */
+.assessments-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.assessments-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #00668c;
+}
+
+/* Input */
+.assessments-input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Button */
+.assessments-button {
+  background-color: #00668c;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.assessments-button:hover {
+  background-color: #004f66; /* Darken the hover color */
+}
+
+/* Card */
+.assessments-card {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Title */
+.assessments-card-title {
+  margin-bottom: 10px;
+  color: #00668c;
+}
+
+/* Card Current Date */
+.assessments-card-currentdate {
+  color: #00668c;
+  font-weight: bold;
+}
+
+/* Card Link */
+.assessments-card-link {
+  color: #00668c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.assessments-card-link:hover {
+  text-decoration: underline;
+}
+
+/* Card Description */
+.assessments-card-description {
+  color: #777;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+/* Error Message */
+.assessments-error {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1000px) {
+  /* Adjust the max-width and margin for smaller screens */
+  .assessments-wrapper {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .assessments-card-description {
-    color: #777;
-    font-size: 12px;
-    margin-left:580px;
-    margin-top: -10px;
-  }
-
-  .assessments-error {
-    color: #ff0000;
-    font-size: 12px;
+    margin-left: 0;
     margin-top: 5px;
   }
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+  /* Adjust the max-width and margin for smaller screens */
+  .assessments-wrapper {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust margin-left and margin-top for card description */
+  .assessments-card-description {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}

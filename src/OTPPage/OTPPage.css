@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
- 
   background-size: cover;
 }
 .otp-container {
@@ -65,7 +64,9 @@ p {
   font-size: 1.5em; /* Adjust font size */
   border: 1px solid #00668C; /* Add border for better visibility */
 }
-
+.error-message {
+  color: red;
+}
 /* Adjust button styles */
 .resend-button,
 .verify-button {

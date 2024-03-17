@@ -13,6 +13,7 @@ import Login from '../Login/Login'; // Import the Login component
 import Home from '../Home/Home';
 import App1 from '../Staff/App1';
 import App2 from '../Student/App2';
+import App3 from '../Admin/App3';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/student" element={<StudentPage />} />
         <Route path="/App2/*" element={<App2 />} />
         <Route path="/App1/*" element={<App1 />} />
-        
+        <Route path="/App3/*" element={<App3 />} />
       </Routes>
     </Router>
   );

@@ -1,13 +1,13 @@
-// SecondPage.js
 import React, { useState } from 'react';
 import '../SecondPage/SecondPage.css';
 import SecondPageImage from '../assets/secondbg.jpeg';
 import { Link } from 'react-router-dom';
 
-
 function SecondPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
 
   // Dummy credentials for student, staff, and admin
   const studentCredentials = { username: 'student@gmail.com', password: 'student123' };
@@ -16,7 +16,11 @@ function SecondPage() {
 
   const handleLogin = (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
-    
+
+    // Reset previous errors
+    setEmailError('');
+    setPasswordError('');
+
     if (email === studentCredentials.username && password === studentCredentials.password) {
       // Navigate to the student page if credentials are correct
       window.location.href = '/App2';
@@ -25,10 +29,15 @@ function SecondPage() {
       window.location.href = '/App1';
     } else if (email === adminCredentials.username && password === adminCredentials.password) {
       // Navigate to the admin page if admin credentials are correct
-      window.location.href = '/adminPage'; // Change the URL to the admin page
+      window.location.href = '/App3'; // Change the URL to the admin page
     } else {
-      // Display an alert if credentials are incorrect
-      alert('Invalid credentials. Please try again.');
+      // Display validation error if credentials are incorrect
+      if (email !== studentCredentials.username && email !== staffCredentials.username && email !== adminCredentials.username) {
+        setEmailError('Invalid email address.');
+      }
+      if (password !== studentCredentials.password && password !== staffCredentials.password && password !== adminCredentials.password) {
+        setPasswordError('Invalid password.');
+      }
     }
   };
 
@@ -53,6 +62,7 @@ function SecondPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              {emailError && <p className="error-message">{emailError}</p>}
               <input
                 className="login-input"
                 type="password"
@@ -60,6 +70,7 @@ function SecondPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
+              {passwordError && <p className="error-message">{passwordError}</p>}
               <button type="submit" className="login-button">
                 Login
               </button>

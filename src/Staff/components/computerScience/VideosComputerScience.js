@@ -65,7 +65,7 @@ const VideosComputerScience = () => {
   };
 
   return (
-    <div>
+    <div className="vc">
       <div className="videos-container">
         <h2>Upload a Video</h2>
         <form onSubmit={handleUploadVideo}>

@@ -1,11 +1,95 @@
 /* Subjects.css */
 
+/* Common styles */
+.dropdown-toggle,
+.dropdown-menu,
+.options-box {
+  width: 100%; /* Set full width by default */
+}
+
+.dropdown-menu {
+  left: 0; /* Ensure the dropdown menu is always aligned to the left */
+}
+
+/* Media Query for Tablet */
+@media (max-width: 1000px) {
+  .dropdown-toggle,
+  .dropdown-menu,
+  .options-box {
+    width: 70%; /* Adjust width for tablet screens */
+  }
+  .create-subject-form {
+    margin-top: -540px;
+    margin-left: -100px;
+  }
+  .create-subject-button-container {
+    margin-left: -100px; /* Move to the right */
+    
+  }
+}
+
+@media (max-width: 1200px) {
+  .dropdown-toggle,
+  .dropdown-menu,
+  .options-box {
+    width: 80%; /* Adjust width for tablet screens */
+  }
+
+  .create-subject-form {
+    margin-top: -540px;
+    margin-left: 500px;
+  }
+  .create-subject-button-container {
+    margin-left: 300px; /* Move to the right */
+    margin-right: 10px; /* Optional margin for spacing */
+  }
+}
+@media (max-width: 1400px) {
+  .dropdown-toggle,
+  .dropdown-menu,
+  .options-box {
+    width: 70%; /* Adjust width for tablet screens */
+  }
+  .create-subject-form {
+    margin-top: -540px;
+    margin-left: 300px;
+  }
+  .create-subject-button-container {
+    margin-left: 200px; /* Move to the right */
+    margin-right: 10px; /* Optional margin for spacing */
+  }
+}
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .dropdown-toggle,
+  .dropdown-menu,
+  .options-box {
+    width: 60%; /* Adjust width for mobile screens */
+  }
+  .create-subject-form {
+    margin-top: -540px;
+    margin-left: 500px;
+  }
+  .create-subject-button-container {
+    margin-left: 50px; /* Move to the right */
+    margin-right: 10px; /* Optional margin for spacing */
+  }
+}
+
+@media (max-width: 100px) {
+  .dropdown-toggle,
+  .dropdown-menu,
+  .options-box {
+    width: 30%; /* Adjust width for mobile screens */
+  }
+}
 .subjects-container {
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .dropdown-container {
   display: flex;
@@ -127,7 +211,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .image-container {
   margin-top: 100px; /* Adjust margin as needed */

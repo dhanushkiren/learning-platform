@@ -1,4 +1,3 @@
-// OTPPage.js
 import React, { useState, useEffect, useRef } from 'react';
 import './OTPPage.css'; // Import or create a CSS file for styling
 
@@ -6,7 +5,9 @@ function OTPPage() {
   const initialCountdown = 90;
   const [countdown, setCountdown] = useState(initialCountdown); // Initial countdown value in seconds
   const [otpDigits, setOtpDigits] = useState(['', '', '', '', '', '']); // State to store individual OTP digits
+  const [error, setError] = useState(''); // State to manage validation error
   const inputRefs = useRef([...Array(6)].map(() => React.createRef())); // Refs for input elements
+  const dummyOTP = '123456'; // Dummy OTP for validation
 
   useEffect(() => {
     // Update countdown every second
@@ -31,6 +32,8 @@ function OTPPage() {
     setCountdown(initialCountdown);
     // Clear OTP digits
     setOtpDigits(['', '', '', '', '', '']);
+    // Clear validation error
+    setError('');
     // Focus on the first input box
     inputRefs.current[0].current.focus();
   };
@@ -61,9 +64,21 @@ function OTPPage() {
   // Handler function for Verify button
   const handleVerify = () => {
     // Check if exactly 6 digits are entered
-    if (otpDigits.join('').length === 6) {
-      // Navigate to the password-recovery page
-      window.location.href = '/password-recovery';
+    const enteredOTP = otpDigits.join('');
+    if (enteredOTP.length === 6) {
+      // Compare entered OTP with dummy OTP
+      if (enteredOTP === dummyOTP) {
+        // OTP verification successful
+        setError('');
+        // Navigate to the password-recovery page
+        window.location.href = '/password-recovery';
+      } else {
+        // Show validation error for incorrect OTP
+        setError('Invalid OTP. Please enter correct OTP.');
+      }
+    } else {
+      // Show validation error for incomplete OTP
+      setError('Please enter a 6-digit OTP.');
     }
   };
 
@@ -87,6 +102,8 @@ function OTPPage() {
               />
             ))}
           </div>
+          {/* Display validation error message */}
+          {error && <p className="error">{error}</p>}
           <div className="button-container">
             <button className="resend-button" onClick={handleResend}>
               Resend

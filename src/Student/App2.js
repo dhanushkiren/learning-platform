@@ -11,7 +11,7 @@ import SyllabusComputerScience from './syllabusComputerScience';
 import Notes from "./Notes";
 import Videos from './Videos';
 import Assessment from "./Assessment";
-import logo from './assests/LOGO(New).jpeg'; // Import your logo imageC:\Users\HAI\OneDrive\Documents\Levelup\my-react-app\src\assests\LOGO(New).jpeg
+import levelup from './assests/levelup.jpeg'; // Import your logo imageC:\Users\HAI\OneDrive\Documents\Levelup\my-react-app\src\assests\LOGO(New).jpeg
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,19 +30,19 @@ function App() {
       <div className="App">
         <header className="header">
           <div className="header-item" onClick={toggleSidebar}>
-            <img src={logo} alt="Logo" className="logo" /> {/* Add your logo here */}
+             
             <FaBars style={{ color: '#00668c', fontSize: '24px' }} />
           </div>
+          <div className="header-center">
+       
+        <img src={levelup} alt="Level Up Logo" className="company-logo" />
+        <span className="company-name">LEVEL UP</span>
+      </div>
+          
           <div className="header-item">
-            <div className="search-container">
-              <input type="text" placeholder="Search" className="search-box" />
-              <div className="search-icon-container">
-                <FaSearch style={{ color: 'white', fontSize: '20px' }} />
-              </div>
-            </div>
-          </div>
-          <div className="header-item">
-            <Link to="/App2/notification" className="notification-link"> {/* Add this line for Notification */}
+            <Link to="/App2/notification" className="notification-
+            
+            link"> {/* Add this line for Notification */}
               <FaBell style={{ color: '#00668c', fontSize: '24px'}} />
             </Link>
             <div className="profile-icon-container" onClick={toggleProfileBox}>
@@ -89,14 +89,7 @@ function App() {
             <FaBookOpen style={{ color: '#00668c', fontSize: '24px'}} />
             <span className="sidebar-item-name">Syllabus</span>
           </Link>
-          <div className="sidebar-item">
-            <FaCog style={{ color: '#00668c', fontSize: '24px'}} />
-            <span className="sidebar-item-name">Settings</span>
-          </div>
-          <div className="sidebar-item">
-            <FaQuestion style={{ color: '#00668c', fontSize: '24px'}} />
-            <span className="sidebar-item-name">Help</span>
-          </div>;
+         
         </div>
       </div>
    
