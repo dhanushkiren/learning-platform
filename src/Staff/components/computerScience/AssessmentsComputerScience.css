@@ -105,19 +105,27 @@
 @media screen and (max-width: 1000px) {
   /* Adjust the max-width and margin for smaller screens */
   .assessments-wrapper {
-    max-width: 90%;
+
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .assessments-card-description {
+    margin-left: 0;
+    margin-top: 5px;
+
   }
 
   
   
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 800px) {
   /* Adjust the max-width and margin for smaller screens */
   .assessments-wrapper {
-    width: 700px;
+    width: 70%;
+
     margin-left: auto;
     margin-right: auto;
   }

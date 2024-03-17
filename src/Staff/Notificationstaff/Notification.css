@@ -104,7 +104,8 @@ input:checked + .slider:before {
 .sender-name {
   font-weight: bold;
   text-align: left;
-  margin-left: -620px;
+
+  margin-right: 790px;
 }
 
 .timestamp {

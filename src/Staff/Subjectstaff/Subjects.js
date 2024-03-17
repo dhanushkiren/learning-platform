@@ -82,7 +82,7 @@ const Subjects = () => {
                 >
                   {subject}
                   <span className="close-button" onClick={() => handleSubjectClose(subject)}>
-                    X
+                    
                   </span>
                 </div>
               ))}
@@ -104,7 +104,7 @@ const Subjects = () => {
           <form onSubmit={handleSubjectCreation}>
             <input
               type="text"
-              placeholder="Enter subject name"
+              placeholder="Enter subject"
               value={newSubject}
               onChange={(e) => setNewSubject(e.target.value)}
             />

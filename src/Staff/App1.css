@@ -151,3 +151,16 @@ input:focus {
         max-width: 90%; /* Adjust image size for mobile screens */
     }
 }
+
+
+.company-logo {
+    width: 40px; /* Adjust the width of the logo */
+    height: auto;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .company-name {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #00668c; /* Adjust color as needed */
+}

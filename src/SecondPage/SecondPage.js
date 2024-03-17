@@ -29,7 +29,7 @@ function SecondPage() {
       window.location.href = '/App1';
     } else if (email === adminCredentials.username && password === adminCredentials.password) {
       // Navigate to the admin page if admin credentials are correct
-      window.location.href = '/adminPage'; // Change the URL to the admin page
+      window.location.href = '/App3'; // Change the URL to the admin page
     } else {
       // Display validation error if credentials are incorrect
       if (email !== studentCredentials.username && email !== staffCredentials.username && email !== adminCredentials.username) {
