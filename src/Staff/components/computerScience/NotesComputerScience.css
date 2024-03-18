@@ -35,7 +35,7 @@
 }
 
 .notes-cards-container {
-  margin-top: 100px;
+  margin: 100px 0 0 -20px;
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   gap: 20px;
@@ -44,9 +44,8 @@
   border: 5px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 1050px;
+  width: 100%;
   overflow-x: auto;
-  margin-left: -130px;
 }
 
 .notes-card {

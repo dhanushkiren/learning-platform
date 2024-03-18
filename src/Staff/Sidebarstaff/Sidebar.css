@@ -27,6 +27,7 @@
   
   /* Ensure sidebar items align properly when open */
   .sidebar.open {
+    z-index: 99;
     width: 170px; /* Expanded width */
   }
   

@@ -1,5 +1,6 @@
 /* Adjust sidebar height */
 .sidebar1 {
+  
   position: fixed;
   top: 60px; /* Height of the header */
   left: 0;
@@ -83,12 +84,10 @@
   border: 2px solid black; /* Thick black border */
   padding: 20px;
   text-align: center;
-  width: 960px; /* Fixed width */
+  width: 65%; /* Fixed width */
   height: 430px; /* Fixed height */
-  margin-top: 100px;
-  margin-left: -50px;
-
- 
+  top: 100px;
+  left: -50px;
   border-radius: 10px;
 }
 
@@ -96,21 +95,21 @@
   position: absolute; /* Set position to absolute */
   font-size: 36px;
   margin-top: -50px;
-  margin-left: 450px;
+  left: 50%;
   color: #00668c;
   background-color: white;
 }
 
 .timetable-boxes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(3, 1fr); /* 3 rows */
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 3 rows */
   gap: 10px;
 }
 
 .timetable-box {
   border: 1px solid black;
-  width: 310px;
+  width: 90%;
   height: 137px;
   background-color: #d4eaf7;
   border-radius: 5px;

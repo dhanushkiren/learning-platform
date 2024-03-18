@@ -4,7 +4,8 @@
 .dropdown-toggle,
 .dropdown-menu,
 .options-box {
-  width: 100%; /* Set full width by default */
+
+  width: 50%; /* Set full width by default */
 }
 
 .dropdown-menu {
